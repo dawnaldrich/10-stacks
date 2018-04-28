@@ -14,13 +14,6 @@ module.exports = class LinkedList {
     return this.head;
   }
 
-  empty() {
-    if (this.head === null || !this.head) {
-      return true;
-    }
-    return false;
-  }
-
   insertAtHead(value) {
     const node = new Node(value);
     node.next = this.head;

@@ -16,7 +16,10 @@ class Stack {
     this._storage.peekAt();
   }
   isEmpty() {
-    this._storage.empty();
+    if (this._storage.head === null || !this._storage.head) {
+      return true;
+    }
+    return false;
   }
 }
 module.exports = Stack;
