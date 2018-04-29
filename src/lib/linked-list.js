@@ -3,8 +3,6 @@
 const Node = require('./node');
 const logger = require('./logger');
 
-logger.log(logger.INFO, 'Im testing linked list');
-
 module.exports = class LinkedList {
   constructor() {
     this.head = null;
